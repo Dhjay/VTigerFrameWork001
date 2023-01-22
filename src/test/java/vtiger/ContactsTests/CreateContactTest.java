@@ -18,7 +18,7 @@ import vtiger.ObjectRepository.HomePage;
 public class CreateContactTest extends BaseClass {
 
 
-		@Test
+		@Test(groups = "RegressionSuite")
 		public void createContactTest() throws IOException {
 		
 		String LASTNAME = eLib.readDataFromExcel("Contact", 1, 2)+jLib.getRandomNumber();

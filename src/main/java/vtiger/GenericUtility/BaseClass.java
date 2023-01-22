@@ -9,9 +9,13 @@ import org.testng.Reporter;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
+import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import vtiger.ObjectRepository.HomePage;
@@ -32,8 +36,11 @@ public class BaseClass {
 	public WebDriver driver = null;
 	public static WebDriver sDriver;
 	
-	@BeforeClass
-	public void bcConfig() throws IOException {
+	
+	//@Parameters("BROWSER") //use when you want to do compatibility testing
+	//@BeforeTest //Use when you want to do parallel testing
+	@BeforeClass(groups= {"SmokeSuite","RegressionSuite"})
+	public void bcConfig(/*String BROWSER*/) throws IOException { 
 		
 		String BROWSER = pLib.readDataFromPropertyFile("browser");
 		String URL = pLib.readDataFromPropertyFile("url");
@@ -60,7 +67,7 @@ public class BaseClass {
 		sDriver = driver;
 	}
 	
-	@BeforeMethod
+	@BeforeMethod(groups= {"SmokeSuite","RegressionSuite"})
 	public void bmConfig() throws IOException {
 		
 		String USERNAME = pLib.readDataFromPropertyFile("username");
@@ -72,7 +79,7 @@ public class BaseClass {
 		
 	}
 	
-	@AfterMethod
+	@AfterMethod(groups= {"SmokeSuite","RegressionSuite"})
 	public void amConfig() {
 		
 		HomePage hp = new HomePage(driver);
@@ -80,13 +87,14 @@ public class BaseClass {
 		Reporter.log("---sign out successfully---",true);
 	}
 	
-	@AfterClass
+	//@AfterTest
+	@AfterClass(groups= {"SmokeSuite","RegressionSuite"})
 	public void acConfig() {
 		driver.close();
 		Reporter.log("---browser closed---",true);
 	}
 	
-	@AfterSuite
+	@AfterSuite(groups= {"SmokeSuite","RegressionSuite"})
 	public void asConfig() {
 		//database close
 	}

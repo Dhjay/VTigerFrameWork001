@@ -19,7 +19,7 @@ import vtiger.ObjectRepository.OrganizationsPage;
 @Listeners(vtiger.GenericUtility.ListenersImplementation.class)
 public class CreateContactWithOrgTest extends BaseClass  {
 
-		@Test
+		@Test (groups = "SmokeSuite")
 		public void createContactWithOrgTest() throws IOException {
 	
 		String ORGNAME = eLib.readDataFromExcel("Contact", 4, 3)+jLib.getRandomNumber();
