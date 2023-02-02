@@ -1,6 +1,7 @@
 package vtiger.GenericUtility;
 
 import java.io.IOException;
+import java.sql.SQLException;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -24,14 +25,17 @@ import vtiger.ObjectRepository.LoginPage;
 public class BaseClass {
 	
 	@BeforeSuite(groups= {"SmokeSuite","RegressionSuite"})
-	public void bsConfig() {
+	public void bsConfig() throws SQLException {
 		//database open
+		//dLib.connectToDB();
+		//dLib.executeQueryVerifyDataAndReturn(null, 0, null);
 	}
 	
 	public ExcelFileUtility eLib = new ExcelFileUtility();
 	public PropertyFileUtility pLib =new PropertyFileUtility();
 	public JavaUtility jLib = new JavaUtility();
 	public WebDriverUtility wLib = new WebDriverUtility();
+	public DatabaseUtility dLib = new DatabaseUtility();
 	
 	public WebDriver driver = null;
 	public static WebDriver sDriver;
@@ -95,7 +99,8 @@ public class BaseClass {
 	}
 	
 	@AfterSuite(groups= {"SmokeSuite","RegressionSuite"})
-	public void asConfig() {
+	public void asConfig() throws SQLException {
 		//database close
+		//dLib.dbClose();
 	}
 }
