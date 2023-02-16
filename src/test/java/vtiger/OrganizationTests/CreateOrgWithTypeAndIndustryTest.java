@@ -14,7 +14,7 @@ import vtiger.ObjectRepository.OrganizationsPage;
 
 public class CreateOrgWithTypeAndIndustryTest extends BaseClass{
 	
-	@Test
+	@Test(groups = "SmokeSuite")
 	public void CreateOrgWithTypeAndIndustryTest() throws EncryptedDocumentException, IOException {
 		
 		String ORGNAME = eLib.readDataFromExcel("Organization",4 , 2) + jLib.getRandomNumber();
