@@ -1,14 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[---sign in successfully---]]>
     </line>
     <line>
-      <![CDATA[---Organization link clicked---]]>
+      <![CDATA[---Organiztion link clicked---]]>
     </line>
     <line>
-      <![CDATA[---created organization with industry and type dropdown, Test passed---]]>
+      <![CDATA[---Printed all org names---]]>
+    </line>
+    <line>
+      <![CDATA[---sign out successfully---]]>
+    </line>
+    <line>
+      <![CDATA[---sign in successfully---]]>
+    </line>
+    <line>
+      <![CDATA[---Organiztion link clicked---]]>
+    </line>
+    <line>
+      <![CDATA[---5th row selected---]]>
+    </line>
+    <line>
+      <![CDATA[---sign out successfully---]]>
+    </line>
+    <line>
+      <![CDATA[---sign in successfully---]]>
+    </line>
+    <line>
+      <![CDATA[---Organiztion link clicked---]]>
+    </line>
+    <line>
+      <![CDATA[---sign out successfully---]]>
+    </line>
+    <line>
+      <![CDATA[---sign in successfully---]]>
+    </line>
+    <line>
+      <![CDATA[---Organiztion link clicked---]]>
+    </line>
+    <line>
+      <![CDATA[---All checkboxes clicked---]]>
     </line>
     <line>
       <![CDATA[---sign out successfully---]]>
@@ -17,55 +50,166 @@
       <![CDATA[---browser closed---]]>
     </line>
   </reporter-output>
-  <suite started-at="2023-02-13T08:53:01 IST" name="Default suite" finished-at="2023-02-13T08:54:26 IST" duration-ms="85515">
+  <suite started-at="2023-03-19T12:31:44 IST" name="Default suite" finished-at="2023-03-19T12:32:54 IST" duration-ms="69905">
     <groups>
     </groups>
-    <test started-at="2023-02-13T08:53:01 IST" name="Default test" finished-at="2023-02-13T08:54:26 IST" duration-ms="85515">
-      <class name="vtiger.OrganizationTests.CreateOrgWithTypeAndIndustryTest">
-        <test-method is-config="true" signature="bsConfig()[pri:0, instance:vtiger.OrganizationTests.CreateOrgWithTypeAndIndustryTest@1a451d4d]" started-at="2023-02-13T08:53:01 IST" name="bsConfig" finished-at="2023-02-13T08:53:01 IST" duration-ms="17" status="PASS">
+    <test started-at="2023-03-19T12:31:44 IST" name="Default test" finished-at="2023-03-19T12:32:54 IST" duration-ms="69905">
+      <class name="vtiger.OrganizationTests.WebTableTest">
+        <test-method is-config="true" signature="bsConfig()[pri:0, instance:vtiger.OrganizationTests.WebTableTest@62150f9e]" started-at="2023-03-19T12:31:44 IST" name="bsConfig" finished-at="2023-03-19T12:31:44 IST" duration-ms="21" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- bsConfig -->
-        <test-method is-config="true" signature="bcConfig()[pri:0, instance:vtiger.OrganizationTests.CreateOrgWithTypeAndIndustryTest@1a451d4d]" started-at="2023-02-13T08:53:01 IST" name="bcConfig" finished-at="2023-02-13T08:53:53 IST" duration-ms="51895" status="PASS">
+        <test-method is-config="true" signature="bcConfig()[pri:0, instance:vtiger.OrganizationTests.WebTableTest@62150f9e]" started-at="2023-03-19T12:31:44 IST" name="bcConfig" finished-at="2023-03-19T12:31:48 IST" duration-ms="4571" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- bcConfig -->
-        <test-method is-config="true" signature="bmConfig()[pri:0, instance:vtiger.OrganizationTests.CreateOrgWithTypeAndIndustryTest@1a451d4d]" started-at="2023-02-13T08:53:53 IST" name="bmConfig" finished-at="2023-02-13T08:54:00 IST" duration-ms="7181" status="PASS">
+        <test-method is-config="true" signature="bmConfig()[pri:0, instance:vtiger.OrganizationTests.WebTableTest@62150f9e]" started-at="2023-03-19T12:31:48 IST" name="bmConfig" finished-at="2023-03-19T12:31:53 IST" duration-ms="4255" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[---sign in successfully---]]>
             </line>
           </reporter-output>
         </test-method> <!-- bmConfig -->
-        <test-method signature="CreateOrgWithTypeAndIndustryTest()[pri:0, instance:vtiger.OrganizationTests.CreateOrgWithTypeAndIndustryTest@1a451d4d]" started-at="2023-02-13T08:54:00 IST" name="CreateOrgWithTypeAndIndustryTest" finished-at="2023-02-13T08:54:23 IST" duration-ms="23338" status="PASS">
+        <test-method signature="allOrgNameWebTable()[pri:0, instance:vtiger.OrganizationTests.WebTableTest@62150f9e]" started-at="2023-03-19T12:31:53 IST" name="allOrgNameWebTable" finished-at="2023-03-19T12:32:01 IST" duration-ms="8466" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[---Organization link clicked---]]>
+              <![CDATA[---Organiztion link clicked---]]>
             </line>
             <line>
-              <![CDATA[---created organization with industry and type dropdown, Test passed---]]>
+              <![CDATA[---Printed all org names---]]>
             </line>
           </reporter-output>
-        </test-method> <!-- CreateOrgWithTypeAndIndustryTest -->
-        <test-method is-config="true" signature="amConfig()[pri:0, instance:vtiger.OrganizationTests.CreateOrgWithTypeAndIndustryTest@1a451d4d]" started-at="2023-02-13T08:54:23 IST" name="amConfig" finished-at="2023-02-13T08:54:26 IST" duration-ms="2758" status="PASS">
+        </test-method> <!-- allOrgNameWebTable -->
+        <test-method is-config="true" signature="amConfig()[pri:0, instance:vtiger.OrganizationTests.WebTableTest@62150f9e]" started-at="2023-03-19T12:32:01 IST" name="amConfig" finished-at="2023-03-19T12:32:03 IST" duration-ms="2133" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[---sign out successfully---]]>
             </line>
           </reporter-output>
         </test-method> <!-- amConfig -->
-        <test-method is-config="true" signature="acConfig()[pri:0, instance:vtiger.OrganizationTests.CreateOrgWithTypeAndIndustryTest@1a451d4d]" started-at="2023-02-13T08:54:26 IST" name="acConfig" finished-at="2023-02-13T08:54:26 IST" duration-ms="261" status="PASS">
+        <test-method is-config="true" signature="bmConfig()[pri:0, instance:vtiger.OrganizationTests.WebTableTest@62150f9e]" started-at="2023-03-19T12:32:03 IST" name="bmConfig" finished-at="2023-03-19T12:32:07 IST" duration-ms="3316" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[---sign in successfully---]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- bmConfig -->
+        <test-method signature="checkbox5select()[pri:0, instance:vtiger.OrganizationTests.WebTableTest@62150f9e]" started-at="2023-03-19T12:32:07 IST" name="checkbox5select" finished-at="2023-03-19T12:32:13 IST" duration-ms="6246" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[---Organiztion link clicked---]]>
+            </line>
+            <line>
+              <![CDATA[---5th row selected---]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- checkbox5select -->
+        <test-method is-config="true" signature="amConfig()[pri:0, instance:vtiger.OrganizationTests.WebTableTest@62150f9e]" started-at="2023-03-19T12:32:13 IST" name="amConfig" finished-at="2023-03-19T12:32:19 IST" duration-ms="5925" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[---sign out successfully---]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- amConfig -->
+        <test-method is-config="true" signature="bmConfig()[pri:0, instance:vtiger.OrganizationTests.WebTableTest@62150f9e]" started-at="2023-03-19T12:32:19 IST" name="bmConfig" finished-at="2023-03-19T12:32:23 IST" duration-ms="4392" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[---sign in successfully---]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- bmConfig -->
+        <test-method signature="deleteOrgWebTable()[pri:0, instance:vtiger.OrganizationTests.WebTableTest@62150f9e]" started-at="2023-03-19T12:32:23 IST" name="deleteOrgWebTable" finished-at="2023-03-19T12:32:38 IST" duration-ms="14368" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [(489) 934-8578 ] but found [(594) 969-0156]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [(489) 934-8578 ] but found [(594) 969-0156]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at org.testng.Assert.assertEquals(Assert.java:639)
+at vtiger.OrganizationTests.WebTableTest.deleteOrgWebTable(WebTableTest.java:82)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[---Organiztion link clicked---]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- deleteOrgWebTable -->
+        <test-method is-config="true" signature="amConfig()[pri:0, instance:vtiger.OrganizationTests.WebTableTest@62150f9e]" started-at="2023-03-19T12:32:38 IST" name="amConfig" finished-at="2023-03-19T12:32:39 IST" duration-ms="1855" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[---sign out successfully---]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- amConfig -->
+        <test-method is-config="true" signature="bmConfig()[pri:0, instance:vtiger.OrganizationTests.WebTableTest@62150f9e]" started-at="2023-03-19T12:32:39 IST" name="bmConfig" finished-at="2023-03-19T12:32:43 IST" duration-ms="3609" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[---sign in successfully---]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- bmConfig -->
+        <test-method signature="webTableTest()[pri:0, instance:vtiger.OrganizationTests.WebTableTest@62150f9e]" started-at="2023-03-19T12:32:43 IST" name="webTableTest" finished-at="2023-03-19T12:32:52 IST" duration-ms="8657" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[---Organiztion link clicked---]]>
+            </line>
+            <line>
+              <![CDATA[---All checkboxes clicked---]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- webTableTest -->
+        <test-method is-config="true" signature="amConfig()[pri:0, instance:vtiger.OrganizationTests.WebTableTest@62150f9e]" started-at="2023-03-19T12:32:52 IST" name="amConfig" finished-at="2023-03-19T12:32:53 IST" duration-ms="1711" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[---sign out successfully---]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- amConfig -->
+        <test-method is-config="true" signature="acConfig()[pri:0, instance:vtiger.OrganizationTests.WebTableTest@62150f9e]" started-at="2023-03-19T12:32:53 IST" name="acConfig" finished-at="2023-03-19T12:32:54 IST" duration-ms="293" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[---browser closed---]]>
             </line>
           </reporter-output>
         </test-method> <!-- acConfig -->
-        <test-method is-config="true" signature="asConfig()[pri:0, instance:vtiger.OrganizationTests.CreateOrgWithTypeAndIndustryTest@1a451d4d]" started-at="2023-02-13T08:54:26 IST" name="asConfig" finished-at="2023-02-13T08:54:26 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="asConfig()[pri:0, instance:vtiger.OrganizationTests.WebTableTest@62150f9e]" started-at="2023-03-19T12:32:54 IST" name="asConfig" finished-at="2023-03-19T12:32:54 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- asConfig -->
-      </class> <!-- vtiger.OrganizationTests.CreateOrgWithTypeAndIndustryTest -->
+      </class> <!-- vtiger.OrganizationTests.WebTableTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
